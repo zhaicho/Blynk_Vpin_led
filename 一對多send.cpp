@@ -1,8 +1,8 @@
 #define BLYNK_PRINT Serial
 // Blynk 鏈接key；
-#define BLYNK_TEMPLATE_ID "TMPL6l2PpFRkH"
-#define BLYNK_TEMPLATE_NAME "LED"
-#define BLYNK_AUTH_TOKEN "TBY3kEZd_HZlOLUkRvVyOWmQfRPA1-Fv"
+#define BLYNK_TEMPLATE_ID "BLYNK_TEMPLATE_ID"
+#define BLYNK_TEMPLATE_NAME "LYNK_TEMPLATE_NAME"
+#define BLYNK_AUTH_TOKEN "BLYNK_AUTH_TOKEN"
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -13,8 +13,8 @@ char ssid[] = "Hou lan ging";
 char pass[] = "houyaoying";
 
 // esp互傳mac碼；
-uint8_t broadcastAddress1[] = {0x80, 0x64, 0x6F, 0x87, 0x93, 0x75};
-uint8_t broadcastAddress2[] = {0x80, 0x64, 0x6F, 0x87, 0x92, 0xB9};
+uint8_t broadcastAddress1[] = {0x80, 0x64, 0x6F, 0x87, 0x00, 0x00};
+uint8_t broadcastAddress2[] = {0x80, 0x64, 0x6F, 0x87, 0x00, 0x00};
 
 void setup()
 {
