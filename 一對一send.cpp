@@ -1,8 +1,8 @@
 #define BLYNK_PRINT Serial
 
-#define BLYNK_TEMPLATE_ID "TMPL6l2PpFRkH"
-#define BLYNK_TEMPLATE_NAME "LED"
-#define BLYNK_AUTH_TOKEN "TBY3kEZd_HZlOLUkRvVyOWmQfRPA1-Fv"
+#define BLYNK_TEMPLATE_ID "BLYNK_TEMPLATE_ID"
+#define BLYNK_TEMPLATE_NAME "BLYNK_TEMPLATE_NAME"
+#define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -13,7 +13,7 @@ char ssid[] = "Hou lan ging";
 char pass[] = "houyaoying";
 
 // esp互傳mac碼；
-uint8_t broadcastAddress[] = {0x80, 0x64, 0x6F, 0x87, 0x92, 0xB9};
+uint8_t broadcastAddress[] = {0x00, 0x64, 0x6F, 0x87, 0x92, 0x00};
 
 // 建立傳送結構；必須與接受方結構匹配；
 typedef struct struct_message
